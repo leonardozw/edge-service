@@ -120,3 +120,5 @@ logging:
     circuitbreaker: io.github.resilience4j, org.springframework.clouf.circuitbreaker
   level:
     circuitbreaker: info
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
