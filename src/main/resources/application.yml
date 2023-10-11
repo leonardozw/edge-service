@@ -97,6 +97,20 @@ resilience4j:
             default:
                 timeoutDuration: 5s # Timeout duration
 
-#logging:
-#    level:
-#        io.github.resilience4j: DEBUG
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
+      show-components: always
+      probes:
+        enabled: true
+
+logging:
+  group:
+    circuitbreaker: io.github.resilience4j, org.springframework.clouf.circuitbreaker
+  level:
+    circuitbreaker: info
