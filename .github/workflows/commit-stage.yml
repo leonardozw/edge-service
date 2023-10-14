@@ -3,7 +3,7 @@ on: push
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: leonardozw/catalog-service
+  IMAGE_NAME: leonardozw/edge-service
   VERSION: latest
 
 jobs:

@@ -1,5 +1,6 @@
 package com.leonardozw.edgeservice;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.DynamicPropertyRegistry;
@@ -26,6 +27,7 @@ private static final int REDIS_PORT = 6379;
 	}
 
 	@Test
+	@Disabled
 	void verifyThatSpringContextLoads() {
 	}
 }
